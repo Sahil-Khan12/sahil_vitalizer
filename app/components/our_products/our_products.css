@@ -1,0 +1,94 @@
+.op_section_parent {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-top: 80px;
+}
+
+.op_bullet {
+  display: flex;
+  gap: 10px;
+  color: #c24747;
+  font-size: 80%;
+  font-weight: 600;
+  align-items: center;
+}
+
+.op_bullet_marker {
+  height: 30px;
+  width: 15px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.op_products {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.op_heading {
+  display: flex;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  font-weight: 600;
+}
+
+.op_title {
+  font-size: 200%;
+}
+
+.op_view_container {
+  margin: 0px 100px 50px 30px;
+  display: grid;
+  place-items: center;
+}
+
+.op_view_button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 200px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.op_view_button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .op_products {
+    display: flex;
+    gap: 50px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition: scroll 0.5s ease-in-out;
+    padding-right: 30px;
+  }
+
+  .os_products::-webkit-scrollbar {
+    display: none;
+  }
+
+  .op_section_parent {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  .op_view_container {
+    margin-right: 40px;
+  }
+
+  .op_bullet {
+    margin-top: 40px;
+  }
+}

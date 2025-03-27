@@ -1,0 +1,110 @@
+.section_parent {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.bullet {
+  display: flex;
+  gap: 10px;
+  color: #db4444;
+  font-size: 80%;
+  font-weight: 600;
+  align-items: center;
+}
+
+.bullet_marker {
+  height: 30px;
+  width: 15px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.products {
+  display: flex;
+  gap: 50px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  transition: scroll 0.5s ease-in-out;
+  padding-right: 30px;
+}
+
+.products::-webkit-scrollbar {
+  display: none;
+}
+
+.heading {
+  display: flex;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 200%;
+}
+
+.timer {
+  font-size: 130%;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.view_container {
+  margin: 0px 100px 50px 30px;
+  display: grid;
+  place-items: center;
+}
+
+.view_button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 200px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.view_button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .products {
+    gap: 30px;
+  }
+
+  .section_parent {
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-top: 0px;
+    gap: 10px;
+  }
+
+  .timer {
+    display: none;
+  }
+
+  .view_container {
+    margin-right: 40px;
+  }
+
+  .bullet {
+    margin-top: 40px;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+}

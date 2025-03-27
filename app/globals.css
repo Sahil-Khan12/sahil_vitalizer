@@ -1,11 +1,11 @@
-:root {
+/* :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #862e2e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -24,11 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 
 a {
   color: inherit;
@@ -39,4 +35,10 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }

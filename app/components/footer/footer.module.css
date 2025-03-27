@@ -1,0 +1,140 @@
+.footer_parent {
+  display: grid;
+  justify-items: space-evenly;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  height: auto;
+  gap: 40px;
+  background-color: black;
+  color: white;
+  padding: 65px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+.footer_col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.footer_title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+
+.footer_logo {
+  height: 90px;
+  width: 180px;
+  background-image: url("./footer_logo.png");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.footer_email {
+  height: 30px;
+  padding-left: 1.5vh;
+  padding-right: 40px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 200px;
+  background: url("send3.jpg") no-repeat right;
+  background-size: 30px;
+  font-size: 80%;
+}
+
+.footer_content_hover:hover {
+  font-size: 110%;
+  cursor: pointer;
+}
+
+.footer_other {
+  display: flex;
+}
+
+.footer_QR {
+  background-image: url("footer_QR.png");
+  height: 75px;
+  width: 75px;
+  background-size: cover;
+}
+
+.footer_QR:hover {
+  cursor: pointer;
+}
+
+.footer_google {
+  height: 32px;
+  width: 106px;
+  background-image: url("footer_google_play.png");
+  background-size: cover;
+  margin-bottom: 8px;
+}
+
+.footer_google:hover {
+  cursor: pointer;
+}
+
+.footer_apple {
+  height: 36px;
+  width: 106px;
+  background-image: url("footer_apple.png");
+  background-size: cover;
+}
+
+.footer_apple:hover {
+  cursor: pointer;
+}
+
+.footer_google_apple {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.footer_new_user {
+  margin-bottom: 0;
+  font-size: 75%;
+  color: grey;
+}
+
+.footer_icons_col {
+  display: flex;
+  gap: 10px;
+}
+
+.footer_icons:hover {
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  font-size: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: rgb(86, 86, 86);
+  border-top: 2px solid rgb(65, 65, 65);
+  background-color: rgb(4, 4, 4);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer_parent {
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+
+  .footer_col {
+    gap: 10px;
+  }
+
+  .footer_logo {
+    margin-bottom: 30px;
+  }
+}
